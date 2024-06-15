@@ -67,7 +67,7 @@ void reserveSeat(Bus *bus) {
 
     // Marque le siège comme réservé et enregistre le nom du passager
     bus->sieges[seatNumber - 1].reservation = 1;
-    strcpy(bus->sieges[seatNumber - 1].passengerName,passengerName);
+    strcpy(bus->sieges[seatNumber - 1].passengerName,passengerName);ajout d''
 
     printf("Siege %d reserve avec succes pour %s.\n", seatNumber, passengerName);
 }
