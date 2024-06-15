@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "reservationbillets.c"
+
 
 
 
@@ -56,9 +56,9 @@ int main ()
     printf(" Age est :%d\n", age);
     printf("merci de vous etre enregistrer!\n\n ");
 
-//itiner();
 
-principale();
+
+
 
     return 0;
 }
