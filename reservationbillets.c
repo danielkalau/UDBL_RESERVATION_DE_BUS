@@ -3,6 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 
+
+
+
 #define MAX_SEATS 40 // Nombre maximum de sièges dans un bus
 
 // Structure pour représenter un siège dans le bus
@@ -63,7 +66,7 @@ void reserveSeat(Bus *bus) {
     }
 
     printf("Entrez votre nom: ");
-    scanf("%s", passengerName); // Demande le nom du passager
+  scanf("%s", passengerName); // Demande le nom du passager
 
     // Marque le siège comme réservé et enregistre le nom du passager
     bus->sieges[seatNumber - 1].reservation = 1;
@@ -88,8 +91,8 @@ void reservationBillets() {
     reserveSeat(&buses[choice - 1]); // Réserve un siège pour l'itinéraire choisi
 }
 
-// Fonction principale
-int main() {
+// Fonction principale pour l'instant
+void reservationbillets () {
     int choixPrincipal; // Choix de l'utilisateur dans le menu principal
 
     while (1) { // Boucle infinie pour afficher le menu principal
@@ -114,7 +117,8 @@ int main() {
             default:
                 printf("Choix invalide. Veuillez réessayer.\n"); // Message d'erreur pour choix invalide
         }
+
     }
 
-    return 0; // Retourne 0 pour indiquer que le programme s'est terminé correctement
+     ; // Retourne 0 pour indiquer que le programme s'est terminé correctement
 }
