@@ -11,7 +11,7 @@
 
 int main ()
 {
-    char prenom[50],nom[50],postnom[50],sex[2],numTel[11],tempo[100];
+    char prenom[50],nom[50],postnom[50],sex[2],tempo[100];
     int age ;
 
     //demande de l'idenfication du client
@@ -30,10 +30,7 @@ int main ()
     strtok(tempo,"");
     strcpy(postnom,tempo);
 
-    printf("entrez votre numero de telephone:");
-
-    fgets(tempo,sizeof (tempo),stdin);
-    sscanf(tempo,"%s ",numTel);
+   
 
     //le sex
     printf("quel votre sex (m/f):\n");
